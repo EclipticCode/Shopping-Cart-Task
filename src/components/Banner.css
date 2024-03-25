@@ -1,0 +1,10 @@
+.head{
+    height: 300px;
+    width: auto;
+    background-color: #212529;
+    color: rgb(255, 255, 255);
+    font-size: 52px;
+}
+.shop{
+    margin-top: 50px;
+}
