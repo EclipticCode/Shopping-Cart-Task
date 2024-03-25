@@ -31,7 +31,7 @@ const Navbar = () => {
         
       </ul>
       <form className="d-flex" role="search">
-        <button className="btn btn-outline-secondary" type="submit"> <img src="../src/assets/cart-fill.svg"/> Cart</button>
+        <button className="btn btn-outline-secondary" type="submit"> <img src="../src/assets/cart-fill.svg"/> Cart:{}</button>
       </form>
     </div>
   </div>
