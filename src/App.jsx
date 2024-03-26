@@ -14,7 +14,7 @@ const App = () => {
     setCount(count - 1)
   }
    const cardDatas = [
-    { id: 1, img: "./src/assets/cardimage.jpg", title: "Fancy Product", price: "$40.00-$80.00" },
+    { id: 1, img: require("./src/assets/cardimage.jpg"), title: "Fancy Product", price: "$40.00-$80.00" },
     { id: 2, img: "./src/assets/cardimage.jpg", title: "Special Item", price: "$18.00" },
     { id: 3, img: "./src/assets/cardimage.jpg", title: "Sale Item", price: "$25.00" },
     { id: 4, img: "./src/assets/cardimage.jpg", title: "Popular Item", price: "$40.00" },
@@ -22,7 +22,7 @@ const App = () => {
     { id: 6, img: "./src/assets/cardimage.jpg", title: "Fancy Product", price: "$120.00" },
     { id: 7, img: "./src/assets/cardimage.jpg", title: "Special Item", price: "$18.00" },
     { id: 8, img: "./src/assets/cardimage.jpg", title: "Popular Item", price: "$40.00" }]
-    
+
   return (
     <div>
       <Navbar count={count} />
