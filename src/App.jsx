@@ -15,7 +15,7 @@ const App = () => {
     setCount(count - 1)
   }
    const cardDatas = [
-    { id: 1, img: img, price: "$40.00-$80.00" },
+    { id: 1, img: img,title: "Fancy Product", price: "$40.00-$80.00" },
     { id: 2, img: img, title: "Special Item", price: "$18.00" },
     { id: 3, img: img, title: "Sale Item", price: "$25.00" },
     { id: 4, img: img, title: "Popular Item", price: "$40.00" },

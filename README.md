@@ -8,7 +8,7 @@ Create a shopping cart using React that allows users to add and remove items fro
 Sample design for the Shopping Cart:   
 "https://startbootstrap.com/previews/shop-homepage"
 
-*Requirments:*   
+**Requirments:**   
 - The shopping cart should display a list of available products with their name and description.   
 - Users should be able to add items to the cart by clicking the "Add to Cart" button.   
 - When an item is added to the cart, the cart quantity number should be increased.   
