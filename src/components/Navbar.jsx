@@ -1,5 +1,5 @@
 import React from 'react'
-import img from './assets/cart-fill.svg'
+import img from '../assets/cart-fill.svg'
 
 const Navbar = (props) => {
   return (
@@ -31,7 +31,7 @@ const Navbar = (props) => {
               </li>
             </ul>
             <form className="d-flex" role="search">
-              <button className="btn btn-outline-secondary fw-bolder" type="submit"> {img} Cart:{props.count}</button>
+              <button className="btn btn-outline-secondary fw-bolder" type="submit"> <i className="bi bi-cart-check-fill"></i> Cart:{props.count}</button>
             </form>
           </div>
         </div>
