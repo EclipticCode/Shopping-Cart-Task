@@ -1,19 +1,7 @@
 import React, { useState } from 'react'
-
+import './Card.css'
 const Card = (props) => {
-    const [count, setCount] = useState(0);
-    const [isInCart, setIsInCart] = useState(false);
-
-    const handleAddToCart = () => {
-        setCount(count + 1);
-        setIsInCart(true);
-    };
-
-    const handleRemoveFromCart = () => {
-        setCount(count - 1);
-        setIsInCart(false);
-    };
-   
+    const [isInCart, setIsInCart] = useState(true);
     return (
         <div className='container'>
             <div className="row">
@@ -21,30 +9,25 @@ const Card = (props) => {
                     <div className="card text-center" style={{ width: '18rem' }}>
                         <img src={props.img} className="card-img-top w-100" alt="image" />
                         <div className="card-body">
-                            <h5 className="card-title">{props.title}</h5>
+                            <h5 className="card-title fw-bolder">{props.title}</h5>
                             <p className="card-text">{props.price}</p>
+                            <div className="card-text d-flex justify-content-center stars">
+                                <p className='bi-star-fill'></p>
+                                <p className='bi-star-fill'></p>
+                                <p className='bi-star-fill'></p>
+                                <p className='bi-star-fill'></p>
+                            </div>
+                            {
+                                isInCart ? <button className="btn btn-outline-secondary" onClick={() => {
+                                    props.increment()
+                                    setIsInCart(false)
+                                }}>Add to cart</button> :
 
-                            {/* <button className="btn btn-outline-secondary" onClick={props.onClick}>{newCount === 0 ?"Add to cart" : "Remove from cart"}
-                                 </button> */}
-
-                            {isInCart ? (
-                                <button className="btn btn-outline-secondary" onClick={handleRemoveFromCart}>
-                                    Remove from Cart
-                                </button>
-                            ) : (
-                                <button className="btn btn-outline-secondary" onClick={handleAddToCart}>
-                                    Add to Cart
-                                </button>
-                            )}
-                            <h3>count:{count}</h3>
-
-
-                            {/* {props.isInCart ? <button className="btn btn-outline-secondary" onClick={props.onIncrement}>
-                                Add to Cart
-                            </button> :
-                            <button className="btn btn-outline-secondary" onClick={props.onDecrement}>
-                                Remove from Cart
-                            </button>} */}
+                                    <button className="btn btn-outline-secondary" onClick={() => {
+                                        props.decrement()
+                                        setIsInCart(true)
+                                    }}>Remove from cart</button>
+                            }
 
                         </div>
                     </div>

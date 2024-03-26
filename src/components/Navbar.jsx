@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div>
          <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -31,7 +31,7 @@ const Navbar = () => {
         
       </ul>
       <form className="d-flex" role="search">
-        <button className="btn btn-outline-secondary" type="submit"> <img src="../src/assets/cart-fill.svg"/> Cart:{}</button>
+        <button className="btn btn-outline-secondary fw-bolder" type="submit"> <img src="../src/assets/cart-fill.svg"/> Cart:{props.count}</button>
       </form>
     </div>
   </div>
