@@ -15,7 +15,7 @@ const App = () => {
     setCount(count - 1)
   }
    const cardDatas = [
-    { id: 1, img: img, title: "Fancy Product", price: "$40.00-$80.00" },
+    { id: 1, img: "https://www.imore.com/sites/imore.com/files/styles/small/public/field/image/2019/10/airpods-pro-render.png", title: "Fancy Product", price: "$40.00-$80.00" },
     { id: 2, img: "./src/assets/cardimage.jpg", title: "Special Item", price: "$18.00" },
     { id: 3, img: "./src/assets/cardimage.jpg", title: "Sale Item", price: "$25.00" },
     { id: 4, img: "./src/assets/cardimage.jpg", title: "Popular Item", price: "$40.00" },
