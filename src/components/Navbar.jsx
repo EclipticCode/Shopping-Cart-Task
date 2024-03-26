@@ -28,7 +28,6 @@ const Navbar = (props) => {
                   <li><a className="dropdown-item" href="#">New Arrivals</a></li>
                 </ul>
               </li>
-
             </ul>
             <form className="d-flex" role="search">
               <button className="btn btn-outline-secondary fw-bolder" type="submit"> <img src="../src/assets/cart-fill.svg" /> Cart:{props.count}</button>

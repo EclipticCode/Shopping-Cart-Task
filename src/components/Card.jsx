@@ -24,7 +24,6 @@ const Card = (props) => {
                                     props.increment()
                                     setIsInCart(false)
                                 }}>Add to cart</button> :
-
                                     <button className="btn btn-outline-secondary" onClick={() => {
                                         props.decrement()
                                         setIsInCart(true)

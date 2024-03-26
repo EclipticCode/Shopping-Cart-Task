@@ -22,6 +22,7 @@ const App = () => {
     { id: 6, img: "./src/assets/cardimage.jpg", title: "Fancy Product", price: "$120.00" },
     { id: 7, img: "./src/assets/cardimage.jpg", title: "Special Item", price: "$18.00" },
     { id: 8, img: "./src/assets/cardimage.jpg", title: "Popular Item", price: "$40.00" }]
+    
   return (
     <div>
       <Navbar count={count} />
