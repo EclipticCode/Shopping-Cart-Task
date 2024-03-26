@@ -15,14 +15,14 @@ const App = () => {
     setCount(count - 1)
   }
    const cardDatas = [
-    { id: 1, img: "https://www.imore.com/sites/imore.com/files/styles/small/public/field/image/2019/10/airpods-pro-render.png", title: "Fancy Product", price: "$40.00-$80.00" },
+    { id: 1, img: img, price: "$40.00-$80.00" },
     { id: 2, img: img, title: "Special Item", price: "$18.00" },
-    { id: 3, img: "./src/assets/cardimage.jpg", title: "Sale Item", price: "$25.00" },
-    { id: 4, img: "./src/assets/cardimage.jpg", title: "Popular Item", price: "$40.00" },
-    { id: 5, img: "./src/assets/cardimage.jpg", title: "Sale Item", price: "$25.00" },
-    { id: 6, img: "./src/assets/cardimage.jpg", title: "Fancy Product", price: "$120.00" },
-    { id: 7, img: "./src/assets/cardimage.jpg", title: "Special Item", price: "$18.00" },
-    { id: 8, img: "./src/assets/cardimage.jpg", title: "Popular Item", price: "$40.00" }]
+    { id: 3, img: img, title: "Sale Item", price: "$25.00" },
+    { id: 4, img: img, title: "Popular Item", price: "$40.00" },
+    { id: 5, img: img, title: "Sale Item", price: "$25.00" },
+    { id: 6, img: img, title: "Fancy Product", price: "$120.00" },
+    { id: 7, img: img, title: "Special Item", price: "$18.00" },
+    { id: 8, img: img, title: "Popular Item", price: "$40.00" }]
 
   return (
     <div>
@@ -32,7 +32,7 @@ const App = () => {
       <div className="container">
         <div className="row">
           {cardDatas.map(data => (
-            <div className='col-sm-12 col-md-6 col-lg-4 col-xl-3 justify-content-center' key={data.id}>
+            <div className='col-sm-12 col-md-6 col-lg-4 col-xl-3 justify-content-center margin' key={data.id}>
               <Card
                 {...data}
                 count={count}

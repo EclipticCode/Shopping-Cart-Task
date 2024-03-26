@@ -6,7 +6,7 @@ const Card = (props) => {
     const [isInCart, setIsInCart] = useState(true);
     return (
         <div className='container'>
-            <div className="row margin">
+            <div className="row">
                 <div className="">
                     <div className="card text-center" style={{ width: '18rem' }}>
                         <img src={props.img} className="card-img-top w-100" alt="image" />
